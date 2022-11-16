@@ -1,0 +1,12 @@
+package br.com.produtos.repositories;
+
+import br.com.produtos.domain.models.ProductModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface ProductRepository extends JpaRepository<ProductModel, Long> {
+    Optional<Object> findByName(String name);
+}

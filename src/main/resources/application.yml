@@ -1,0 +1,25 @@
+spring:
+  profiles.active: dev
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  application:
+    name: 'Produtos'
+
+  datasource:
+    url: jdbc:h2:mem:produtosDb
+    username:
+    password: 
+    driverClassName: org.h2.Driver
+
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+
+  banner.location: banner.txt
+
+server.port: 8080
+

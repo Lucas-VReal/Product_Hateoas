@@ -1,0 +1,5 @@
+br\com\produtos\ProdutosApplication.class
+br\com\produtos\api\controllers\ProductController.class
+br\com\produtos\repositories\ProductRepository.class
+br\com\produtos\domain\models\ProductModel.class
+br\com\produtos\domain\services\ProductService.class
